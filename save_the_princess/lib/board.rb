@@ -1,13 +1,9 @@
 class Board
     attr_reader :grid_size, :grid, :bot, :princess, :error
   def initialize(grid_size, grid=[])
-    if grid_size.odd? && grid_size >= 3 && grid_size < 100
-      @grid_size = grid_size
-      @grid = grid
-      build_grid(@grid_size)
-    else
-      @error = "That input is invalid. Please make sure your number is odd, greater than or equal to 3, and less than 100"
-    end
+    @grid_size = grid_size
+    @grid = grid
+    build_grid(@grid_size)
   end
 
   def build_grid(grid_size)
