@@ -1,5 +1,5 @@
 class Board
-    attr_reader :grid_size, :grid, :bot, :princess, :error
+    attr_reader :grid_size, :grid, :bot, :princess
   def initialize(grid_size, grid=[])
     @grid_size = grid_size
     @grid = grid

@@ -13,10 +13,9 @@ RSpec.describe "Board" do
     expect(board1.grid[3][1]).to eq("m")
     expect(board1.grid[board1.princess.row][board1.princess.column]).to eq("p")
     expect(board1.bot.coordinate).to eq([3,1])
-  end
-
-  it "checks" do
-    board1 = Board.new(2, [1, 1])
-    expect(board1.grid_size).to eq(2)
+    expect(board1.bot).to be_a(Player)
+    expect(board1.princess).to be_a(Player)
+    expect(board1.grid).to be_an(Array)
+    expect(board1.grid_size).to be_an(Integer)
   end
 end
