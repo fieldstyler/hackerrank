@@ -18,10 +18,10 @@ class Board
     bot_row, bot_column = [middle, middle]
     @grid[bot_row][bot_column] = "m"
     @bot = Player.new(bot_row, bot_column)
-    place_princess(grid_size)
+    place_princess
   end
 
-  def place_princess(grid_size)
+  def place_princess
     four_corners = [[0,0], [-1,0], [0,-1], [-1,-1]]
     princess_row, princess_column = four_corners.sample
     @grid[princess_row][princess_column] = "p"

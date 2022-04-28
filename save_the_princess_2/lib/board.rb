@@ -22,6 +22,7 @@ class Board
 
   def place_princess(grid_size, bot)
     princess = [rand(0..(grid_size-1)), rand(0..(grid_size-1))]
+    # checks to make sure princess doesn't get placed on top of bot
     until bot != princess
       princess = [rand(0..(grid_size-1)), rand(0..(grid_size-1))]
     end
