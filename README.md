@@ -1,4 +1,4 @@
-##### Save The Princess Code Challenges
+## Save The Princess Code Challenges
 
 This repo contains my solutions to the Bot Saves Princess challenges [1](https://www.hackerrank.com/challenges/saveprincess/problem) & [2](https://www.hackerrank.com/challenges/saveprincess2/problem) from HackerRank.com.
 
@@ -36,5 +36,8 @@ And then run
 
 Both solutions will display the grid with the locations of the bot and the princess, along the the directions printed out below. Here are two examples of what each solution could look like:
 
+Save Princess 1:
 ![save_princess_1](save_the_princess_image_1.png)
+
+Save Princess 2:
 ![save_princess_2](save_the_princess_image_2.png)
